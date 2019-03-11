@@ -1,0 +1,8 @@
+#include <string>
+#include <iostream>
+
+int main(){
+	std::string foo;
+	std::cin >> foo;
+	std::cout << "You said: " + foo + "\n";
+}
