@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int input1;
+int input2;
+int sum;
+
+int add(int num1, int num2)
+{
+	return num1 + num2;
+}
+
+int main()
+{
+	cout << "Enter an integer: \n";
+	cin >> input1;
+	
+	cout << "Enter a second integer: \n";
+	cin >> input2;
+	
+	sum = add (input1, input2);
+	
+	cout << "Their sum is: " << sum << "\n";
+}
+
