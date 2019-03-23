@@ -1,0 +1,8 @@
+int factorial(int* numberPointer)
+{
+	int number = 1;
+	
+	for (int i = *numberPointer ; i > 0 ; i--)
+		number = number * i;
+	return number;
+}
