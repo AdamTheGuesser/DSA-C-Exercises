@@ -1,0 +1,36 @@
+// This is the beginning of the source file
+
+#include "foo.h" //Notice the different syntax for including a local file.
+
+//Once the class is defined in the .h file, we only need to
+//give the function definitions. You get the first one as
+//a template.
+
+
+int foo::add_one(int n){
+	return n + 1;
+}
+
+bool foo::is_even(int n){
+	return n%2 == 0;
+}
+
+bool foo::is_odd(int n){
+	return n%2 == 1;
+}
+
+// End of the source file
+
+
+// Beginning of the header file
+
+class foo {
+	
+	public:
+	
+		int add_one(int);
+		bool is_even(int);
+		bool is_odd(int);
+};
+
+// End of the header file
